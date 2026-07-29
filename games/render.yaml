@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: integrity-hunting
+    env: python
+    plan: free
+    autoDeploy: true
+    healthCheckPath: /api/public
+    buildCommand: pip install --upgrade pip && pip install -r backend/requirements.txt
+    startCommand: gunicorn --chdir backend -w 1 -k gthread --threads 8 --timeout 120 -b 0.0.0.0:$PORT app:app
