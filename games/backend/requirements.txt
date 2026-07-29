@@ -1,6 +1,0 @@
-Flask==3.0.3
-gunicorn==22.0.0
-numpy==2.1.1
-opencv-python-headless==4.10.0.84
-PyQRCode==1.2.1
-pypng==0.20220715.0
