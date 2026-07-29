@@ -1,4 +1,0 @@
-Flask==3.0.3
-gunicorn==22.0.0
-PyQRCode==1.2.1
-pypng==0.20220715.0
